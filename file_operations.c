@@ -70,8 +70,9 @@ perror("read");
 close(fd);
 return -1;
 }
-                                                                                                                       printf("\n--- End of file ---\n");
-                                                                                                                       // Close the file
+printf("\n--- End of file ---\n");
+        
+// Close the file
 if (close(fd) == -1) {
 perror("close");
 return -1;
